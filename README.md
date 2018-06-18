@@ -2,14 +2,16 @@
 you can save Instagram media by hashtag or account to your local with bulky fashion.
 
 ## Usage example
-python isg_clipper.py
 
-then, define part
+```
+python isg_clipper.py
+```
+
+1. then, define part
 hashtag or account
 
-then define name
-
-then program starts.
+2. then define name
+3. then program starts.
 
 Ctl+c to break command line if you must.
 
