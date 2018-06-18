@@ -1,10 +1,10 @@
 # isg_clipper
-
-usage:
-python isg_clipper.py
-
 you can get media by hashtag or account
 
+## Usage example
+python isg_clipper.py
 
-requirements:
+
+
+## requirements:
 python 2.7
