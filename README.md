@@ -9,6 +9,10 @@ hashtag or account
 
 then define name
 
+then program starts.
+
+Ctl+c to break command line if you must.
+
 if successful, create content folder in same path.
 enjoy
 
