@@ -1,7 +1,6 @@
 #isg-clipper
 #written by lshash based on code at
 #https://gist.github.com/marcoqu/e17e1c4414f8d18e6672976d941161fa
-#, which is so-phis-ti-cated & saved our time
 
 import time
 import re
@@ -14,7 +13,7 @@ import urllib
 import io
 import datetime
 
-######OK.
+######.
 INSTAGRAM_URL = "https://www.instagram.com"
 HASHTAG_ENDPOINT = "/graphql/query/?query_hash={}&variables={}"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
@@ -25,10 +24,8 @@ ACCESS_C = 24
 ######next page shot
 def get_params(pots, end_cursor, mode, accnum, amount):
 	if mode == 0:
-		#return '{{"tag_name":"{}","first":50,"after":"{}"}}'.format(pots, end_cursor)
 		return '{{"tag_name":"{}","first":{},"after":"{}"}}'.format(pots, amount, end_cursor)
 	if mode == 1:
-		#return '{{"id":"{}","first":5,"after":"{}"}}'.format(accnum, end_cursor)
 		return '{{"id":"{}","first":{},"after":"{}"}}'.format(accnum, amount, end_cursor)
 
 
@@ -100,22 +97,11 @@ def get_query_id(html, mode):#init1
 		############query hash      there are 4 type for [account crawl]                         ########
 		##################################for comment                                                ####
 		##################################for profile                                                ####
-		##################################for saved post [probably which Da user                     ####
-		################################## saved before, we may not so much interest this inf......] ####
+		##################################for saved post                                             ####
 		##################################for taggedpost not tagmedia                                ####
 		#################################################################################################
-		#this is saved post
-		#return re.findall('return e.savedPosts.byUserId.get\\(t\\).pagination},queryId:"([^"]*)"', script_req.text)[0]
 
 		return re.findall('return null===\\([no]=e.profilePosts.byUserId.get\\(t\\)\\)\\|\\|void 0===[no]\\?void 0:[no].pagination},queryId:"([^"]*)"', script_req.text)[0]
-
-		#++++++++++++var n;return null===(n=e.profilePosts.byUserId.get(t))||void 0===n?void 0:n.pagination
-		#++++++++},
-		#++++++++queryId:"76d9c5f9c2d88aa251ece9ea61fdc570",
-
-		#++++++++++++var o;return null===(o=e.profilePosts.byUserId.get(t))||void 0===o?void 0:o.pagination
-		#++++++++},
-		#++++++++queryId:"6305d415e36c0a5f0abb6daba312f2dd",
 
 
 #json detail seeker
