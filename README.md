@@ -16,7 +16,7 @@ hashtag or account
 
 Ctl+c to break command line if you must.
 
-if successful, create content folder in same path.
+if successful, it will create content folder in same path.
 enjoy
 
 ## requirements:
