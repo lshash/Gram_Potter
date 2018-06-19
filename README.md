@@ -1,11 +1,11 @@
-# isg_clipper
+# isgr_clipper
 you can save Instagram media by hashtag or account to your local with bulky fashion.
 [summer 2018 version]
 
 ## Usage example
 
 ```
-python isg_clipper.py
+python isgr-clipper.py
 ```
 
 1. then, define part
