@@ -1,4 +1,4 @@
-# isgr_clipper
+# Instagram Clipper
 you can save Instagram media by hashtag or account to your local with bulky fashion.
 [summer 2018 version]
 
