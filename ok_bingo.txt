@@ -20,6 +20,14 @@ why we dig da JSON?
 we are not seeing id or json data but content output to my browser. offcourse website didnt emit json mainly
 but contents.
 at the same time we dont need to parse json all the time.
+
+......da website gave us contents yesterday,
+so we can get it Today in the same way [so your react should be also same way?] 
+but sometimes by my rithymical click[ almot same as my one]......
+
+
+
+
 so approach transformation.
 
 
