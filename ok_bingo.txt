@@ -15,6 +15,14 @@ we surplizingly keep loading htm by exactly one which getting now. [until reach 
 so we can see end of material, and I awared da path of mp4, yaiks.[ this is not in JSON,
 which used to be inside it only 1 week ago, but da method is exception]
 
+why we seek token or query id?
+why we dig da JSON?
+we are not seeing id or json data but content output to my browser. offcourse website didnt emit json mainly
+but contents.
+at the same time we dont need to parse json all the time.
+so approach transformation.
+
+
 things described above is hand-play but also all in python, so , any one can make automate whole.
 
 we must change style of base of approach.
