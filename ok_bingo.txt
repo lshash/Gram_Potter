@@ -1,0 +1,23 @@
+yaiks.
+
+
+so,
+we can't get htm with ajax-ed by using python simply, instead
+we must use marionet in python world, yey, we can get dinamically-changed one by this.
+as Masha say.
+
+basically
+we can make call html like above mention,
+we can see Pot-point ( entering-point ) by grepping as 'href'
+so we can aware 'taken by ..'
+we surplizingly keep loading htm by exactly one which getting now. [until reach targ]
+
+so we can see end of material, and I awared da path of mp4, yaiks.[ this is not in JSON,
+which used to be inside it only 1 week ago, but da method is exception]
+
+things described above is hand-play but also all in python, so , any one can make automate whole.
+
+we must change style of base of approach.
+plz wait a moment.
+
+
