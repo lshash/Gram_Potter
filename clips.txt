@@ -7,3 +7,8 @@ your browser do everything
 so
 no hacks, just surf.
 everything is ok.
+
+providers wants to provide us theirs
+via browser.
+when we consume theirs
+via browser.
