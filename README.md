@@ -19,5 +19,7 @@ Ctl+c to break command line if you must.
 if successful, it will create content folder in same path.
 enjoy
 
+------>GramPotter.py is the latest
+
 ## requirements:
 python 2.7
