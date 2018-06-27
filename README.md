@@ -10,6 +10,6 @@ please make path reachable
 
 ## how to use
 
-'''
+```
 GramPotter.py
-'''
+```
