@@ -7,7 +7,7 @@ GramPotter.py
 ```
 
 
-## requirements
+## requirements  
 python2.7  
 selenium  
 
@@ -18,10 +18,10 @@ please make environment path to this reachable
 private means private,  
 we must do nothing for such account  
 yes there are still way of doing something  
-but this is called 'black-pot-hack'
+but this is called 'black-pot-hack'  
 I am not interested in such activity but for public one.  
 public means public so  
-why not we access by our way?
+why not we access it with our way?
 
 
 
