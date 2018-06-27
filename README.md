@@ -2,8 +2,15 @@
 media scraper by account name from InstaGram
 
 ## usage
+[single pot]  
 ```
+source export.sh {plaes reach to the path for your system}
 GramPotter.py
+```
+[multi pot]  
+```
+arrange your 'where.txt'
+bulky_potter.sh
 ```
 
 
