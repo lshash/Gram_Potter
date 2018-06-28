@@ -5,7 +5,7 @@ ts=GramPotter.py
 
 source export.sh
 
-echo -n "how down? "
+echo -n "down? default is [50], if you ok enter, otherwise put something "
 read ct
 
 echo -n "proceed preference? default is [n] No DL, if you ok enter, otherwise put something "
