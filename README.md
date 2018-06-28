@@ -9,7 +9,8 @@ GramPotter.py [name][amount][dl-option]
 ```
 default value  
 name=mandatory, if nothing specified, [name?]prompt will ask you  
-amount=50  
+amount=50, reasonable number right?, 1 is for minimum request seems like 12 returns  
+which also means this is latest pot, 0 is disaster so please don't do it.  
 dl-option=n(No DL) if you are not okay for this, put something except 'n' to override it.  
 
 [multi pot]  
