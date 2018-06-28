@@ -5,8 +5,14 @@ media scraper by account name from InstaGram
 [single pot]  
 ```
 source export.sh (plaes reach to the path for your system by this)
-GramPotter.py
+GramPotter.py [name][amount][dl-option]
 ```
+default value
+name=mandatory, if nothing specified, [name?]prompt will ask you
+amount=50
+dl-option=n(No DL) if you are not okay for this, put something except 'n' to override it.
+
+
 [multi pot]  
 ```
 arrange your 'where.txt'
