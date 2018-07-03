@@ -20,8 +20,11 @@ def harvester(yurl):
 	if os.path.exists(fullfilename):
 		print "[exist---ed]u r already pacman aren't u?"
 	else:
-		print("[torch-able]" + yurl)
-		urllib.urlretrieve(yurl, fullfilename)
+		if "efg=" in fullfilename:
+			print("[efg_suspic]" + yurl)
+		else:
+			print("[torch-able]" + yurl)
+			urllib.urlretrieve(yurl, fullfilename)
 
 
 def down_pot_rotator(wd):
@@ -151,7 +154,7 @@ hlink = []
 ######down 500 will get 300 pot
 ######down   1 will get  12 'virgin' pot and it will be latest post
 ######down   0 will mess up so never use
-down = 50
+down = 20
 res = "n"
 if len(sys.argv) == 4:
 	name = sys.argv[1]
