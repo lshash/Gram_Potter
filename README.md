@@ -9,7 +9,7 @@ GramPotter.py [name][amount][dl-option]
 ```
 default value  
 name=mandatory, if nothing specified, [name?]prompt will ask you  
-amount=50, reasonable number right?, 1 is for minimum request seems like 12 returns  
+amount=20, reasonable number right?, 1 is for minimum request seems like 12 returns  
 which also means this is latest pot, 0 is disaster so please don't do it.  
 dl-option=n(No DL) if you are not okay for this, put something except 'n' to override it.  
 
@@ -22,10 +22,10 @@ bulky_potter.sh
 
 ## requirements  
 python2.7  
-selenium  
+selenium 3.11 or higher  
+geckodriver executable 20 or higher (if you use firefox)(please make environment path to this reachable)  
+firefox 61 or higher (if you use firefox)  
 
-geckodriver executable (if you use firefox)  
-please make environment path to this reachable
 
 ## about private account
 private means private,  
