@@ -7,8 +7,11 @@
 from selenium import webdriver
 
 import sys
-import os
-import urllib
+import os, io
+#import urllib
+from urllib import FancyURLopener
+
+import httplib
 
 def harvester(yurl):
 	if not os.path.exists(basedir):
@@ -18,13 +21,27 @@ def harvester(yurl):
 	fullfilename = os.path.join(basedir, f)
 
 	if os.path.exists(fullfilename):
-		print "[exist---ed]u r already pacman aren't u?"
+		print "[exist---ed]u r already pac-pot aren't u?"
 	else:
 		if "efg=" in fullfilename:
 			print("[efg_suspic]" + yurl)
 		else:
 			print("[torch-able]" + yurl)
-			urllib.urlretrieve(yurl, fullfilename)
+			#urllib.urlretrieve(yurl, fullfilename)
+			mop.retrieve(yurl, fullfilename)
+
+
+#http://wolfprojects.altervista.org/articles/change-urllib-user-agent/
+#print URLopener.version
+
+class MyOpener(FancyURLopener):
+	version = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13) AppleWebKit/604.1.31 (KHTML, like Gecko) Version/11.0 Safari/604.1.31'
+
+print "user_agent_masquerade=" + MyOpener.version
+
+mop = MyOpener()
+
+
 
 
 def down_pot_rotator(wd):
@@ -45,8 +62,9 @@ def url_scooper(wdr, u):
 
 
 def gram_click_obsessor(lob):
+	#for elem in element_scooper("//div[@class='rg_meta notranslate']"):
 	for elem in element_scooper(lob, "//a"):
-		x = elem.get_attribute("class")#since selenium xpath doesn't return att directly
+		x = elem.get_attribute("class")
 		if "Righ" in x:
 			print "let us tick"
 			elem.click()
@@ -57,15 +75,20 @@ def gram_click_obsessor(lob):
 def gram_src_grabber(lob):
 	js_potter(lob, 0)
 	for elem in element_scooper(lob, "(//img|//video)"):
-		x = elem.get_attribute("src")#since selenium xpath doesn't return att directly
-		if "inst" in x:
-			harvester(x)
+
+		try:
+			x = elem.get_attribute("src")#
+			if "inst" in x:
+				harvester(x)
+		except:
+			print "wat da for we imgvid?"
+			js_potter(lob, 1)
 
 
 def gram_href_grabber(lob):
 	js_potter(lob, 0)
 	for elem in element_scooper(lob, "//a"):
-		x = elem.get_attribute("href")#since selenium xpath doesn't return att directly
+		x = elem.get_attribute("href")#
 		if "/p/" in x:
 			if x not in hlink:
 				print "scraper_interest=" + (x)
@@ -87,14 +110,27 @@ def gram_href_grabber(lob):
 def js_potter(b, dboggy):
 	innerHTML = b.execute_script("return document.body.innerHTML") #returns the inner HTML as a string
 	if(dboggy == 1):
-		print "%%%%%%B U G G Y %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
-		print innerHTML.encode('utf-8')
-		print "%%%%%%B U G G Y - E D .%%%%%%%%  plz define your scraper direction  %%%%%%%%%%%%%%%%"
+		#print "%%%%%%B U G G Y %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+		#print innerHTML.encode('utf-8')
+		#print "%%%%%%B U G G Y - E D .%%%%%%%%  plz define your scraper direction  %%%%%%%%%%%%"
+
+		print "[analyse pot]  time 4 u to stop by ctrl c to see pot 4 ur better perceptron "
+		with io.open('innerht.txt','w',encoding='utf-8') as f:
+			f.write(unicode(innerHTML))
+
 
 
 def element_scooper(br, ele):# get elements 4 deepen pot
-	return br.find_elements_by_xpath(ele)# return web element, this is clickable sometimes
 
+	stat = 0
+	while stat == 0:
+		try:
+			we = br.find_elements_by_xpath(ele)# return web element, this is clickable sometimes
+			stat = 1
+		except httplib.BadStatusLine:
+			print "da line status seems bad."
+
+	return we
 
 
 def go_down_obsessor(bs, d):
@@ -132,6 +168,7 @@ def gram_accessor(address, dpot, b):
 			gram_src_grabber(lb)
 
 			while gram_click_obsessor(lb) == 0:
+				print "clicked done normally but next src grab?"
 				gram_src_grabber(lb)
 			xp+=1
 			yp+=1
@@ -177,7 +214,9 @@ act = 0
 browser = webdriver.Firefox() #replace with .Firefox(), or with the browsing-machine of your choice
 browser.set_window_size(1080, 680)
 
-url = "https://www.instagram.com/" + name
+#url = "https://www.instagram.com/" + name
+#y not
+url = name
 #	act+=1
 
 
