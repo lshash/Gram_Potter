@@ -1,6 +1,15 @@
 # Instagram Clipper
 media scraper by account name from InstaGram
 
+## update usage
+As you can see, Instagram has their update for their gui, they  
+add their great function for account not only account itself but
+also 'tagged'.
+It seems AI like algorithm by theirs for some clever search fashion.
+So da This material also should be changed ..!
+input of 'user' now not properly equals literally 'user name' but bit meaning changes to more like 'address' or 'url'
+
+
 ## usage
 [single pot]  
 ```
@@ -18,7 +27,6 @@ dl-option=n(No DL) if you are not okay for this, put something except 'n' to ove
 arrange your 'where.txt'
 bulky_potter.sh
 ```
-
 
 ## requirements  
 python2.7  
