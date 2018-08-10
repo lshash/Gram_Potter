@@ -18,17 +18,22 @@ def harvester(yurl):
 		os.makedirs(basedir)
 
 	f = os.path.basename(yurl)
+
+	if "?_nc_eui2" in f:
+		print("[eui_suspic]" + f)
+		sc, eui = f.split("?_nc_eui2")
+		f = sc
+
 	fullfilename = os.path.join(basedir, f)
 
+
 	if os.path.exists(fullfilename):
+		#print "[exist---ed]u r already pac-pot aren't u?", f
 		print "[exist---ed]u r already pac-pot aren't u?"
 	else:
-		if "efg=" in fullfilename:
-			print("[efg_suspic]" + yurl)
-		else:
-			print("[torch-able]" + yurl)
-			#urllib.urlretrieve(yurl, fullfilename)
-			mop.retrieve(yurl, fullfilename)
+		print("[torch-able]" + yurl)
+		#urllib.urlretrieve(yurl, fullfilename)
+		mop.retrieve(yurl, fullfilename)
 
 
 #http://wolfprojects.altervista.org/articles/change-urllib-user-agent/
@@ -122,13 +127,15 @@ def js_potter(b, dboggy):
 
 def element_scooper(br, ele):# get elements 4 deepen pot
 
+	global we
 	stat = 0
 	while stat == 0:
 		try:
 			we = br.find_elements_by_xpath(ele)# return web element, this is clickable sometimes
-			stat = 1
 		except httplib.BadStatusLine:
 			print "da line status seems bad."
+		finally:
+			stat = 1
 
 	return we
 
@@ -220,7 +227,7 @@ url = name
 #	act+=1
 
 
-latest_bro, rc = gram_accessor(url, int(down), browser)#fuzzy exit velocity in the scroller behaviour, ton of fuzzy attempt from your side will end up eat it all 
+latest_bro, rc = gram_accessor(url, int(down), browser)#fuzzy exit velocity in the scroller behaviour, ton of fuzzy attempt from your side will end up eating it all 
 
 
 try:
