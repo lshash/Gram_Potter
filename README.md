@@ -9,12 +9,13 @@ not before ajax, but just after that. and simply seeks it and query and well don
 ## usage
 arrange your 'where.csv'
 bulky_potter.sh
-```
 
 ## requirements  
+```
 python2.7  
+```
 
-#caution
+## caution
 please just don't use it cos it's not work properly, folk it, and bit change and it will work. Plus, py2.7 is already bit 
 old man, 3 is better. I actually have it the version but not upload it yet. just bit more steps, it will work.
 
