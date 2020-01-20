@@ -7,8 +7,7 @@ so the user, or client of web, we, already have all material in the local side a
 not before ajax, but just after that. and simply seeks it and query and well done.
 
 ## usage
-arrange your 'where.csv'
-bulky_potter.sh
+run the grampotter.py
 
 ## requirements  
 ```
