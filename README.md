@@ -7,22 +7,44 @@ so the user, or client of web, we, already have all material in the local side a
 not before ajax, but just after that. and simply seeks it and query and well done.
 
 ## usage
->python3 grampotter.py
+```
+python3 grampotter.py
+```
 
 ## how to use it
-```
-python3
-```
 >pynput
->selenium
->geckodriver
+pynput is not essential. but please install, it would not be harmful
 
-pynput is not essential. though you should get the geckodriver executable.
-and please modify the path in grampotter.py source.
+>selenium
+core thing, you should install it if you really want to do it.
+
+>geckodriver
+you should get the geckodriver executable.
+and please modify the path in grampotter.py source to this.
+
+## initialization
+random\
+random access to 1 url in csv.
+
+bulk\
+access to all group url in csv.
+
+wild\
+access to all group url in csv without mode asking meaning all yey.
+
+## mode
+yeah\
+go and all done.
+
+double\
+go and things fetch even more.
+
+can\
+things cancellation.
 
 
 ## caution
 please just don't use it cos it's not work properly, folk it, and bit change and it will work. Plus, py2.7 is already bit 
-old man, 3 is better. just bit more steps, it will work.
+old man, 3 is better. just bit more steps for your needs, it will work.
 
 
