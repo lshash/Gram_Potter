@@ -11,7 +11,7 @@ not before ajax, but just after that. and simply seeks it and query and well don
 python3 grampotter.py
 ```
 
-## how to use it
+## premise
 >pynput
 
 pynput is not essential. but please install, it would not be harmful, and this version is pynput version.
