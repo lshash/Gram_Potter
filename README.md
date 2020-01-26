@@ -43,7 +43,7 @@ double\
 go and things fetch even more.
 
 another\
-not go and things fetch even more.
+Don't go and things fetch even more.
 
 can\
 things cancellation.
