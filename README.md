@@ -13,12 +13,15 @@ python3 grampotter.py
 
 ## how to use it
 >pynput
-pynput is not essential. but please install, it would not be harmful
+
+pynput is not essential. but please install, it would not be harmful, and this version is pynput version.
 
 >selenium
+
 core thing, you should install it if you really want to do it.
 
 >geckodriver
+
 you should get the geckodriver executable.
 and please modify the path in grampotter.py source to this.
 
@@ -41,6 +44,14 @@ go and things fetch even more.
 
 can\
 things cancellation.
+
+## the signal
+t\
+turn off signal.
+
+e\
+nautilus will come for some environment.
+
 
 
 ## caution
